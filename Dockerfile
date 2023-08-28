@@ -19,4 +19,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt \
     && rm requirements.txt
 
-# COPY . .
+# COPY . .   
+# Commented this bcoz main objective of docker is to give environment not to provide files.
+# To use files we need to use volume mount while running docker image i.e. mount host directory 
+# having files to docker container so that docker can use it
