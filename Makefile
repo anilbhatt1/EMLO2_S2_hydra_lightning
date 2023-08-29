@@ -32,3 +32,12 @@ train: ## Train the model
 
 build:
 	docker build -t ${IMAGE_NAME} .
+
+run-bash: # Run the bash inside docker container 
+	docker run -it ${IMAGE_NAME} bash
+
+volume-mount:
+	docker run -it -v $(PWD):/workspace/project ${IMAGE_NAME} bash
+
+run-image:
+	docker run -it ${IMAGE_NAME}
