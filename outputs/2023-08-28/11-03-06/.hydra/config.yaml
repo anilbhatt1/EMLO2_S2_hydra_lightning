@@ -1,0 +1,5 @@
+data:
+  _target_: src.test_class.test_func
+  x: this is a test
+  'y': this is bar asdasdas 123
+  z: 123

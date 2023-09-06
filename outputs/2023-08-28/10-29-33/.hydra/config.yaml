@@ -1,0 +1,4 @@
+data:
+  _target_: src.test_class.TestClass
+  foo: Testclass -foo argument
+  bar: Testclass -bar argument
